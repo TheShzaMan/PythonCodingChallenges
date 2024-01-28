@@ -27,7 +27,7 @@ def filter_list(l):
 filter_list([1, 2, "a", "b"])
 """
 # In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
-
+"""
 def high_and_low(numbers):
     nums_as_ints =[int(number) for number in numbers.split()]
    
@@ -36,3 +36,14 @@ def high_and_low(numbers):
     return (f"{max(nums_as_ints)} {min(nums_as_ints)}")
 
 high_and_low("8 3 -5 42 -1 0 0 -9 4 7 4 -4")
+"""
+# Given two integers a and b, which can be positive or negative,
+#  find the sum of all the integers between and including them and return it. 
+# If the two numbers are equal return a or b.
+def get_sum(a,b):
+    if a == b: 
+        print(a)
+    else:
+        print(sum(range(a, b + 1)))
+
+get_sum(0, -1)
