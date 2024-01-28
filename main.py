@@ -17,6 +17,7 @@ total_pay = reg_hours * pay_rate + ot_hours * ot_pay_rate
 print(total_pay)
 """
 
+"""
 def filter_list(l):
     filtered_list = [element for element in l if type(element) == int]
 
@@ -24,3 +25,14 @@ def filter_list(l):
     return filtered_list
 
 filter_list([1, 2, "a", "b"])
+"""
+# In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+
+def high_and_low(numbers):
+    nums_as_ints =[int(number) for number in numbers.split()]
+   
+    print(f"{max(nums_as_ints)} {min(nums_as_ints)}")
+    print(nums_as_ints[0], nums_as_ints[-1])
+    return (f"{max(nums_as_ints)} {min(nums_as_ints)}")
+
+high_and_low("8 3 -5 42 -1 0 0 -9 4 7 4 -4")
